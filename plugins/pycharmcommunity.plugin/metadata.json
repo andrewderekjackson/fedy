@@ -1,0 +1,18 @@
+{
+	"icon":"pycharm",
+	"label": "PyCharm Community Edition",
+	"description": "Lightweight IDE For Python & Scientific development.",
+	"license": "Proprietary",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query pycharm-community" }
+	}
+}
